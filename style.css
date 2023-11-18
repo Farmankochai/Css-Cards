@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Euclid Circular A", "Poppins";
+    background: #000000;
+
+  }
+
+
+  #section{
+    background:#000000;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+   
+ }
+
+ .head{
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: 100;
+    font-family: 'fontfour';
+  }
+  
+   .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+  
+  }
+  
+  .flex {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding-bottom: 20%;
+  }
+  
+  .box {
+      width: 400px;
+      height: 100px;
+      text-align: center;
+      display: flex;
+      justify-content: center; /* Align text to the left */
+    align-items: center;
+      font-size: 24px;
+      font-weight: bold;
+      border-radius: 15px;
+      border: 2px solid white;
+      background-color: black;
+      color: white;
+      transition: background-color 0.3s;
+      margin: 10px;
+  }
+  
+  .box:hover {
+      background-color: #CDD1D0; /* Change color on hover */
+  }
+  
+  .html {
+      order: 1; /* Leftmost box */
+  }
+  
+  .css {
+      order: 2;
+  }
+  
+  .js {
+      order: 3;
+  }
+  
+  .bootstrap {
+      order: 4; /* Rightmost box */
+  }
+  
+  /* Make the boxes responsive */
+  @media (max-width: 768px) {
+      .box {
+          width: 200px;
+          height: 100px;
+          font-size: 18px;
+      }
+  }
